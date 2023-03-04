@@ -10,64 +10,62 @@
   <body>
     <h2>Faça o seu cadastro para a Liga dos Astronautas!</h2>
     <form>
-      <label for="name">Nome completo:</label>
-      <input type="text" id="name" name="name" /><br /><br />
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <br />
 
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" />
 
-      <label for="pwd"> - Senha:</label>
-      <input type="password" id="pwd" name="pwd" /><br /><br />
+      <label for="password"> - Senha:</label>
+      <input type="password" id="password" name="password" /><br /><br />
 
       <label for="birthday">Data de nascimento:</label>
       <input type="date" id="birthday" name="birthday" />
 
-      <label for="myfile"> - Foto:</label>
-      <input type="file" id="myfile" name="myfile" /><br /><br />
+      <label for="photo"> - Foto:</label>
+      <input type="file" id="photo" name="photo" /><br /><br />
 
-      <label for="nacionalidades">Nacionalidade:</label>
-      <input list="nacionalidades" name="nacionalidade" />
-      <datalist id="nacionalidades">
-        <option value="Americano"></option>
-        <option value="Brasileiro"></option>
-        <option value="Russo"></option>
-      </datalist>
+      <label for="nationality">Nacionalidade:</label>
+      <select name="nationality" id="nationality">
+        <option value="russian">Russa</option>
+        <option value="american">Americana</option>
+        <option value="brasilian">Brasileira</option>
+      </select>
 
-      <label for="genero"> - Gênero:</label>
-      <input type="radio" id="f" name="genero" value="Feminino" />
-      <label for="f">F</label>
-      <input type="radio" id="m" name="genero" value="Masculino" />
-      <label for="m">M</label><br /><br />
+      - Genero:
+      <label for="female">F</label>
+      <input type="radio" name="gender" id="female" value="female" />
+      <label for="male">M</label>
+      <input type="radio" name="gender" id="male" value="male" /><br /><br />
 
-      <label for="qualidade1"> Inteligência</label>
+      Suas principais qualidades:<br />
+      <label for="intelligence"> Inteligência</label>
       <input
         type="checkbox"
-        id="qualidade1"
-        name="qualidade1"
+        id="intelligence"
+        name="intelligence"
         value="Inteligencia"
       />
 
-      <label for="qualidade2">| Resiliência</label>
+      <label for="resilience">| Resiliência</label>
       <input
         type="checkbox"
-        id="qualidade2"
-        name="qualidade2"
+        id="resilience"
+        name="resilience"
         value="Resiliencia"
       />
 
-      <label for="qualidade3">| Preparo físico</label>
-      <input
-        type="checkbox"
-        id="qualidade3"
-        name="qualidade3"
-        value="Preparo"
-      />
+      <label for="physic">| Preparo físico</label>
+      <input type="checkbox" id="physic" name="physic" value="Fisico" />
 
-      <label for="qualidade4">| Educação</label>
+      <label for="education">| Educação</label>
       <input
         type="checkbox"
-        id="qualidade4"
-        name="qualidade4"
+        id="education"
+        name="education"
         value="Educacao"
       /><br /><br />
 
@@ -75,6 +73,8 @@
         rows="10"
         cols="40"
         maxlength="500"
+        name="description"
+        id="description"
         placeholder="Porque você gostaria de ser um astronauta?"
       ></textarea
       ><br /><br />
